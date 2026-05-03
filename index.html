@@ -25,15 +25,14 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 60px;
+    padding:12px 60px;
     background:#0b1f3a;
-    color:#fff;
     z-index:1000;
 }
 
-.logo{
-    font-weight:700;
-    font-size:20px;
+/* LOGO REAL */
+.logo img{
+    height:45px;
 }
 
 /* WHATS NO TOPO */
@@ -45,6 +44,11 @@ body{
     text-decoration:none;
     font-size:14px;
     font-weight:500;
+    transition:0.3s;
+}
+
+.whatsapp-top:hover{
+    background:#1ebe5d;
 }
 
 /* HERO */
@@ -57,10 +61,11 @@ body{
     background:linear-gradient(135deg,#0b1f3a,#1e3c72);
     color:#fff;
     padding:20px;
+    margin-top:70px;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:56px;
 }
 
 .hero p{
@@ -76,6 +81,11 @@ body{
     border-radius:6px;
     text-decoration:none;
     display:inline-block;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:#1ebe5d;
 }
 
 /* SECTIONS */
@@ -121,16 +131,11 @@ body{
     box-shadow:0 8px 25px rgba(0,0,0,0.08);
     transition:0.3s;
     text-align:center;
+    font-weight:500;
 }
 
 .card:hover{
     transform:translateY(-8px);
-}
-
-/* DARK */
-.dark{
-    background:#0b1f3a;
-    color:#fff;
 }
 
 /* FOOTER */
@@ -144,7 +149,14 @@ body{
 /* RESPONSIVO */
 @media(max-width:768px){
     .hero h1{font-size:32px}
-    .navbar{padding:15px 20px}
+
+    .navbar{
+        padding:12px 20px;
+    }
+
+    .logo img{
+        height:35px;
+    }
 }
 </style>
 </head>
@@ -153,7 +165,9 @@ body{
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <div class="logo">MP PARK</div>
+    <div class="logo">
+        <img src="logo.png" alt="MP PARK">
+    </div>
 
     <a href="https://wa.me/5522981022166" class="whatsapp-top">
         WhatsApp
@@ -188,23 +202,8 @@ body{
         <div class="card">Obras</div>
         <div class="card">Resíduos</div>
         <div class="card">Reformas</div>
-        <div class="card">Limpeza de Cisternas</div>
-        <div class="card">Caixas d’Água</div>
-    </div>
-</div>
-</div>
-
-<!-- DIFERENCIAIS -->
-<div class="section dark">
-<div class="container text-center">
-    <h2>Diferenciais</h2>
-
-    <div class="cards">
-        <div class="card">Segurança</div>
-        <div class="card">Qualidade</div>
-        <div class="card">Compromisso</div>
-        <div class="card">Eficiência</div>
-    </div>
+        <div class="card">Limpeza de Reservatórios</div>
+        </div>
 </div>
 </div>
 
