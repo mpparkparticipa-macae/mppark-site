@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MP PARK - Participações e Serviços</title>
+<title>Obras, Reformas e Gestão de Resíduos em Macaé | MP PARK</title>
+
+<meta name="description" content="Empresa especializada em obras, reformas, gestão de resíduos e limpeza de reservatórios em Macaé e região. Qualidade, segurança e eficiência.">
+
+<meta name="keywords" content="obras macaé, reformas macaé, limpeza de cisterna macaé, limpeza caixa d'água macaé, gestão de resíduos macaé">
+
+<meta name="author" content="MP PARK">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MP PARK - Serviços em Macaé">
+<meta property="og:description" content="Soluções completas em obras, resíduos e limpeza de reservatórios.">
+<meta property="og:image" content="banner.png">
+<meta property="og:type" content="website">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -20,12 +33,13 @@ body{
 /* BANNER */
 .banner{
     position:relative;
+    background:#0b1f3a;
 }
 
 .banner img{
-  width:100%;
+    width:100%;
     height:auto;
-    object-fit:contain;
+    display:block;
 }
 
 /* WHATS */
@@ -43,7 +57,24 @@ body{
     box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* SERVIÇOS BLOCO */
+/* HERO TEXTO */
+.hero{
+    padding:40px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+.hero h1{
+    font-size:32px;
+    color:#0b1f3a;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#555;
+}
+
+/* SERVIÇOS */
 .services{
     padding:60px 20px;
     background:#fff;
@@ -64,7 +95,6 @@ body{
     padding:25px;
     width:260px;
     border-radius:10px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
@@ -72,37 +102,36 @@ body{
     transform:translateY(-6px);
 }
 
-.service-box h3{
+.service-box h2{
+    font-size:20px;
     margin-bottom:10px;
 }
 
-/* SECTIONS */
+/* SOBRE */
 .section{
-    padding:80px 20px;
+    padding:60px 20px;
 }
 
 .container{
-    max-width:1100px;
+    max-width:900px;
     margin:auto;
     text-align:center;
 }
 
 .container h2{
-    font-size:32px;
+    font-size:28px;
     margin-bottom:15px;
 }
 
 .container p{
     color:#555;
-    max-width:600px;
-    margin:auto;
 }
 
 /* CLIENTES */
 .cards{
     display:flex;
-    gap:20px;
-    margin-top:40px;
+    gap:15px;
+    margin-top:30px;
     flex-wrap:wrap;
     justify-content:center;
 }
@@ -110,9 +139,9 @@ body{
 .card{
     background:#0b1f3a;
     color:#fff;
-    padding:20px;
-    border-radius:8px;
-    min-width:200px;
+    padding:12px 18px;
+    border-radius:6px;
+    font-size:14px;
 }
 
 /* FOOTER */
@@ -120,52 +149,64 @@ body{
     background:#0b1f3a;
     color:#fff;
     text-align:center;
-    padding:40px;
+    padding:30px;
+    font-size:14px;
 }
 
 /* RESPONSIVO */
 @media(max-width:768px){
     .banner img{
-        height:auto;
         max-height:300px;
+        object-fit:contain;
+    }
+
+    .hero h1{
+        font-size:24px;
     }
 }
 </style>
+
 </head>
 
 <body>
 
 <!-- BANNER -->
 <div class="banner">
-    <img src="banner.png" alt="MP PARK Banner">
+    <img src="banner.png" alt="Serviços de obras, reformas e resíduos em Macaé - MP PARK">
 
-    <a href="https://wa.me/5522981022166" class="whatsapp-top">
+    <a href="https://wa.me/5522981022166?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento" class="whatsapp-top">
         WhatsApp
     </a>
 </div>
 
-<!-- SERVIÇOS DESCRITIVOS -->
+<!-- HERO -->
+<div class="hero">
+    <h1>Obras, Reformas e Gestão de Resíduos em Macaé</h1>
+    <p>Atendimento profissional para empresas e residências com qualidade, segurança e eficiência.</p>
+</div>
+
+<!-- SERVIÇOS -->
 <div class="services">
     <div class="services-container">
 
         <div class="service-box">
-            <h3>Obras</h3>
-            <p>Execução de obras com planejamento técnico, qualidade construtiva e cumprimento rigoroso de prazos.</p>
+            <h2>Obras em Macaé</h2>
+            <p>Execução de obras com planejamento técnico, qualidade e cumprimento rigoroso de prazos.</p>
         </div>
 
         <div class="service-box">
-            <h3>Resíduos</h3>
-            <p>Gestão completa de resíduos com coleta, transporte e destinação adequada conforme normas ambientais.</p>
+            <h2>Gestão de Resíduos</h2>
+            <p>Coleta, transporte e destinação correta de resíduos conforme normas ambientais.</p>
         </div>
 
         <div class="service-box">
-            <h3>Reformas</h3>
-            <p>Reformas comerciais e residenciais com acabamento profissional, agilidade e mínimo impacto operacional.</p>
+            <h2>Reformas</h2>
+            <p>Reformas comerciais e residenciais com acabamento profissional e agilidade.</p>
         </div>
 
         <div class="service-box">
-            <h3>Limpeza de Reservatórios</h3>
-            <p>Higienização de cisternas e caixas d’água garantindo segurança, qualidade da água e conformidade sanitária.</p>
+            <h2>Limpeza de Reservatórios</h2>
+            <p>Limpeza de cisternas e caixas d’água com segurança e conformidade sanitária.</p>
         </div>
 
     </div>
@@ -174,9 +215,9 @@ body{
 <!-- SOBRE -->
 <div class="section">
 <div class="container">
-    <h2>Excelência em soluções para o seu negócio</h2>
+    <h2>Empresa de Serviços em Macaé</h2>
     <p>
-        Atuamos com qualidade, eficiência e compromisso, oferecendo soluções sob medida para cada cliente.
+        A MP PARK atua em Macaé e região oferecendo soluções completas em obras, reformas, limpeza de reservatórios e gestão de resíduos, com foco em qualidade, segurança e eficiência.
     </p>
 </div>
 </div>
@@ -184,29 +225,41 @@ body{
 <!-- CLIENTES -->
 <div class="section">
 <div class="container">
-    <h2>Nossos Clientes Parceiros</h2>
+    <h2>Clientes Atendidos</h2>
 
     <div class="cards">
         <div class="card">SLB</div>
         <div class="card">Igreja de Santanna</div>
         <div class="card">GF Gráfica</div>
         <div class="card">Zuum Vidrocar</div>
-        <div class="card">Photo Art</div>
         <div class="card">Clínica Focus</div>
-        <div class="card">Tony Bernardino</div>
-        <div class="card">Lira dos Conspiradores</div>
         <div class="card">Fiel Transportes</div>
-        <div class="card">Supermercado São José</div>
         <div class="card">Açaí Atacadista</div>
-        <div class="card">Comercial OffShore</div>
     </div>
 </div>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-© 2010 MP PARK - Todos os direitos reservados
+© 2010 MP PARK - Todos os direitos reservados | Macaé - RJ
 </div>
+
+<!-- SEO LOCAL -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MP PARK",
+  "telephone": "+55 22 98102-2166",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Macaé",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "description": "Serviços de obras, reformas, limpeza de reservatórios e gestão de resíduos em Macaé."
+}
+</script>
 
 </body>
 </html>
