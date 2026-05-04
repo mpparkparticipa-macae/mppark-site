@@ -23,10 +23,9 @@ body{
 }
 
 .banner img{
-    width:100%;
-    height:500px;
-    object-fit:cover;
-    object-position: center 30%;
+  width:100%;
+    height:auto;
+    object-fit:contain;
 }
 
 /* WHATS */
@@ -126,7 +125,10 @@ body{
 
 /* RESPONSIVO */
 @media(max-width:768px){
-    .banner img{height:300px}
+    .banner img{
+        height:auto;
+        max-height:300px;
+    }
 }
 </style>
 </head>
